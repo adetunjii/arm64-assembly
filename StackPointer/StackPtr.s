@@ -1,7 +1,7 @@
 .global _main
 .align 4
 
-// 0x0A48 656C 6C6F2077 6F72 6C64 21 => string "Hello world! \n" in hexadecimal
+// 0x0A48 656C 6C6F 2077 6F72 6C64 21 = "\nHello world!" in hexadecimal
 
 
 _main:
@@ -28,3 +28,4 @@ endloop:
     mov x16, #1
     svc #0x80
 
+helloworld:     .ascii "\nHello world!"
