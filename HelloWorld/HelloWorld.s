@@ -9,7 +9,7 @@
 
 
 .global _main                                       // provides the program entry point to linker
-.align 2                                            //  
+.align 4                                            // specifies the memory address alignment to optimize memory access and improve performance 
 _main:                                              // label _main is synonymous to a function in higher level programming languages. It allows you to specify a section of code for execution
     mov X0, #1                                      // copy the destination of the output to register X0, 1 = StdOut 
     adr X1, helloworld                              // copies the address of the output string to register X1
