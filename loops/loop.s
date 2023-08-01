@@ -7,7 +7,7 @@ _main:
 loop:
     cmp x2, #15         ; check to see if value of x2 > 16
     b.HS endloop        ; if higher or same, jump to endloop
-    add x2, x2, #1          ; increment count by 1
+    add x2, x2, #1       ; increment count by 1
     mov x0, #1          ; arg[0] - stdout
     adr x1, helloworld  ; copy the offset of helloworld into register x1
     mov x16, #4         ; Unix system call to write
