@@ -7,6 +7,12 @@
 // compares the number to it's internal lookup table and executes the appropriate function with the
 // data from X0-X2 as arguments
 
+// .align specifies the number of bytes (usually a power of 2) in which data is written to memory and read by the processor
+// This ensures that the processor is able to read data in an efficient and performant way. 
+// In simpler terms, it's just the arrangement of data in memory and how it is accessed. 
+// Ex: if .align is set to 4 bytes, data is read from the memory in 4 bytes chunks and also data is written into memory in 4 bytes chunks
+
+
 
 .global _main                                       // provides the program entry point to linker
 .align 4                                            // specifies the memory address alignment to optimize memory access and improve performance 
